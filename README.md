@@ -4,7 +4,7 @@ The reminder program that reminds you of something. It has its language ORS and 
 ! currently is under deep development and is not ready for use!
 
 # How to install?
-simply go to the __link to realeses__ download zip file, unpack it wherever you want, and then just run the jar file
+simply go to the __link to realeses__ and download zip file, unpack it wherever you want, and then just run the jar file
 
 # What is the ORS-Language?
 This is a small scenario language to save scenarios in files. You can write it on its own!
