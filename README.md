@@ -1,10 +1,10 @@
 # OnlaReminder
-The reminder program that reminds you of something. It has its language ORS and helps you to make breaks between your work
+The reminder program that reminds you of something. It has its own language ORS that helps you to make breaks between your work
 
 ! currently is under deep development and is not ready for use!
 
 # How to install?
-go to the __link to realeses__ and download the zip file, unpack it wherever you want, and then just run the jar file
+go to the [__ realeses__](https://github.com/Onlaperd/OnlaReminder/releases/tag/first-realese) and download the zip file, unpack it wherever you want, and then just run the jar file
 
 # Where is the source
 Unfortunately, I had a git error and after of series of bugs and my mistakes in other programs, I lost the source code...
