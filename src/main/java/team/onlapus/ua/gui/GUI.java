@@ -1,46 +1,46 @@
 package team.onlapus.ua.gui;
 
-import team.onlapus.ua.Data;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import team.onlapus.ua.Data.ColorNames;
 import team.onlapus.ua.actions.Load;
 
-import javax.swing.*;
-import java.awt.*;
-
 public class GUI extends JPanel {
-
-
-
-
-    public GUI(){
-        this.setPreferredSize(new Dimension(Data.PANEL_WIDTH, Data.PANEL_HEIGHT));
-        this.setBackground(Data.ColorNames.darkBlue);
+    public GUI() {
+        this.setPreferredSize(new Dimension(800, 500));
+        this.setBackground(ColorNames.darkBlue);
         this.setLayout(null);
 
-        JLabel title = new JLabel(Data.PROGRAM_NAME);
-        title.setBounds((int) ((Data.PANEL_WIDTH /2)/2), 5, 600, 50);
+        JLabel title = new JLabel("OnlaReminder");
+        title.setBounds(200, 5, 600, 50);
         title.setForeground(Color.white);
         title.setFont(new Font("BV Boli", Font.BOLD, 50));
 
         JButton loadButton = new JButton("load");
-        loadButton.setBounds(5, 5, (Data.PANEL_WIDTH - 20)/2-10, Data.PANEL_HEIGHT - 5);
+        loadButton.setBounds(5, 5, 380, 495);
+        loadButton.setFocusable(false);
         loadButton.addActionListener(new Load());
 
         JButton createButton = new JButton("create");
-        createButton.setBounds((Data.PANEL_WIDTH - 20)/2, 5, (Data.PANEL_WIDTH - 20)/2-5, Data.PANEL_HEIGHT - 5);
-        createButton.addActionListener(e -> JOptionPane.showMessageDialog(null, "sorry, this functionality is currently under development"));
+        createButton.setBounds(390, 5, 385, 495);
+        createButton.addActionListener((e) -> JOptionPane.showMessageDialog(null,
+                "sorry, this functionality is currently under development"
+        ));
+        createButton.setFocusable(false);
 
         JPanel workSpace = new JPanel();
-        workSpace.setBackground(Data.ColorNames.gray);
-        workSpace.setBounds(10, 60, Data.PANEL_WIDTH - 20, Data.PANEL_HEIGHT - 70);
+        workSpace.setBackground(ColorNames.gray);
+        workSpace.setBounds(10, 60, 780, 430);
         workSpace.setLayout(null);
         workSpace.add(loadButton);
         workSpace.add(createButton);
 
         this.add(title);
         this.add(workSpace);
-
-
     }
-
-
 }
