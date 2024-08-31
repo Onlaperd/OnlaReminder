@@ -29,4 +29,5 @@ The scenario is the thing that is contained in the ORS file and reminds you abou
 2. Visual ORS-files creator
 3. The time-TODO(you add six or more things you need to do in some time and set to each thing time for which it is necessary to fulfill)
 4. add $TIME and $DATE commands
-5. (maybe) port for Android
+5. add opportunity to change timer sound
+6. (maybe) port for Android
