@@ -1,0 +1,31 @@
+$ors-valid
+# this is how comment looks
+but comment can look like this and it might work OK (if not your comment starts with a command)
+# $ors-valid is essential at the fist line of code
+# NOTE: Your program gonna be launched in the endless cycle which can be broke only by a user or $BREAK command
+
+# the command $MSG displays the message as the first argument to a user
+$MSG/hello world
+
+# / - arguments separator
+
+# the command $WAIT sets the time to wait
+# the first argument sets the time to wait in seconds
+# the second argument sets the message (until {message} 0h 0m 5s)
+$WAIT/5/test
+
+# the command $CHOOSE lets the user choose what to do next
+# NOTE: before choices MUST be "-" , otherwise user wouldn't be let to choose and command would be just started
+$CHOOSE
+-$CWAIT/300/coffee break
+-$CWAIT/0/no break
+
+# the command time checks the time and if its passed then the following commands with '-' on the start gonna be executed
+$TIME/22:00
+-$MSG/Go to sleep
+
+# and the last one is $DATE, it take 1 argument dd-mm-yyyy and if the date s true then the following commands with '-' on the start gonna be executed
+$Date/01-01-9999
+-msg/Happy new year!
+
+$BREAK
