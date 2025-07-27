@@ -18,11 +18,3 @@ So I made the prototype of OnlaReminder. I thought I could improve it, add GUI, 
 
 # What is a Scenario?
 The scenario is the thing that is contained in the ORS file and reminds you about breaks and other important stuff in time
-
-# TODO
-1. just the timer (you set the time then the timer is running)
-2. Visual ORS-files creator
-3. The time-TODO(you add six or more things you need to do in some time and set to each thing time for which it is necessary to fulfill)
-4. add $TIME and $DATE commands
-5. add opportunity to change timer sound
-6. (maybe) port for Android
